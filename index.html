@@ -1,104 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>portfolio</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>portfolio</title>
-  <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
-</head>
+  <body>
+    <header class="bg-black h-screen">
+      <div class="flex gap-180 bg-green-300 opacity-50 shadow-xl">
+        <div class="p-5">
+          <h1 class="text-4xl">TA</h1>
+        </div>
 
-<body>
-  <header class="bg-black h-screen">
-    <div class="flex gap-180 bg-green-300 opacity-50 shadow-xl">
-      <div class="p-5">
-        <h1 class="text-4xl">TA</h1>
+        <nav class="flex p-5">
+          <ul class="flex gap-5">
+            <li>
+              <a class="hover:bg-green-500 p-3 rounded-full" href="./home.html"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a class="hover:bg-green-500 p-3 rounded-full" href="http://"
+                >About me</a
+              >
+            </li>
+            <li>
+              <a class="hover:bg-green-500 p-3 rounded-full" href="http://"
+                >Skills and Experience</a
+              >
+            </li>
+            <li>
+              <a class="hover:bg-green-500 p-3 rounded-full" href="http://"
+                >Portfolio</a
+              >
+            </li>
+            <li>
+              <a class="hover:bg-green-500 p-3 rounded-full" href="http://"
+                >Resume</a
+              >
+            </li>
+            <li>
+              <a class="hover:bg-green-500 p-3 rounded-full" href="http://"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </nav>
       </div>
+      <div class="flex flex-row place-content-center">
+        <div class="w-1/2">
+          <!-- image goes here -->
+        </div>
 
-      <nav class="flex p-5">
-        <ul class="flex gap-5">
-          <li><a class="hover:bg-green-500 p-3 rounded-full" href="./home.html">Home</a></li>
-          <li><a class="hover:bg-green-500 p-3 rounded-full" href="http://">About me</a></li>
-          <li><a class="hover:bg-green-500 p-3 rounded-full" href="http://">Skills and Experience</a></li>
-          <li><a class="hover:bg-green-500 p-3 rounded-full" href="http://">Portfolio</a></li>
-          <li><a class="hover:bg-green-500 p-3 rounded-full" href="http://">Resume</a></li>
-          <li><a class="hover:bg-green-500 p-3 rounded-full" href="http://">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-    <div class="flex flex-row place-content-center">
-      <div class="w-1/2">
-        <!-- image goes here -->
+        <div class="w-1/2 mt-64">
+          <h1 class="text-5xl">Hello Welcome</h1>
+          <p class="text-5xl text-white">
+            I am Tracy
+            <span class="bg-green-500 shadow-xl p-5 text-7xl">Anizi Amoro</span>
+          </p>
+        </div>
       </div>
+    </header>
+    <section
+      class="h-150 bg-green-500 mx-40 my-30 rounded-xl flex flex-col justify-center pl-20 gap-10 text-center shadow-xl"
+    >
+      <h1 class="text-2xl font-bold">ABOUT ME</h1>
+      <p class="text-xl">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus
+        possimus cumque doloribus voluptatum exercitationem minus, similique
+        ipsa soluta dignissimos et. Voluptatum reprehenderit voluptates
+        necessitatibus repellat alias corrupti dolore, facilis illo?
+      </p>
+    </section>
 
-      <div class="w-1/2 mt-64">
-        <h1 class="text-5xl">Hello Welcome</h1>
-        <p class="text-5xl text-white">
-          I am Tracy <span class="bg-green-500 shadow-xl p-5 text-7xl">Anizi Amoro</span>
-        </p>
+    <section>
+      <div>
+        <div
+          class="grid grid-flow-col grid-rows-3 gap-4 mx-80 h-100 gap-5 m-auto bg-green-500 items-center my-5"
+        >
+          <img
+            class="row-span-3"
+            src="./images/undraw_workspace_s6wf.svg"
+            alt=""
+          />
+          <h1 class="col-span-2">Administrative Associate</h1>
+          <p class="col-span-2 row-span-2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
+            doloremque libero quidem eligendi reprehenderit deserunt temporibus?
+          </p>
+        </div>
+        <div
+          class="grid grid-flow-col grid-rows-3 gap-4 mx-80 h-100 gap-5 m-auto bg-green-500 items-center my-5"
+        >
+          <img
+            class="row-span-3"
+            src="./images/undraw_workspace_s6wf.svg"
+            alt=""
+          />
+          <h1 class="col-span-2">Administrative Associate</h1>
+          <p class="col-span-2 row-span-2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
+            doloremque libero quidem eligendi reprehenderit deserunt temporibus?
+          </p>
+        </div>
+        <div
+          class="grid grid-flow-col grid-rows-3 gap-4 mx-80 h-100 gap- m-auto bg-green-500 items-center my-5"
+        >
+          <img
+            class="row-span-3"
+            src="./images/undraw_workspace_s6wf.svg"
+            alt=""
+          />
+          <h1 class="col-span-2">Administrative Associate</h1>
+          <p class="col-span-2 row-span-2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
+            doloremque libero quidem eligendi reprehenderit deserunt temporibus?
+          </p>
+        </div>
       </div>
-    </div>
-  </header>
-  <section
-    class="h-150 bg-green-500 mx-40 my-30 rounded-xl flex flex-col justify-center pl-20 gap-10 text-center shadow-xl">
-    <h1 class="text-2xl font-bold">ABOUT ME</h1>
-    <p class="text-xl">
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus
-      possimus cumque doloribus voluptatum exercitationem minus, similique
-      ipsa soluta dignissimos et. Voluptatum reprehenderit voluptates
-      necessitatibus repellat alias corrupti dolore, facilis illo?
-    </p>
-  </section>
+    </section>
 
-  <section>
-    <div>
-      <div class="grid grid-flow-col grid-rows-3 gap-4 mx-80 h-100 gap-5 m-auto bg-green-500  items-center my-5">
-        <img class="row-span-3" src="./images/undraw_workspace_s6wf.svg" alt="">
-        <h1 class="col-span-2 ">Administrative Associate</h1>
-        <p class="col-span-2 row-span-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
-          doloremque libero quidem eligendi reprehenderit deserunt temporibus? </p>
+    <section>
+      <div>
+        <h1 class="text-7xl text-center mt-40">My Work</h1>
       </div>
-      <div class="grid grid-flow-col grid-rows-3 gap-4 mx-80 h-100 gap-5 m-auto bg-green-500 items-center my-5">
-        <img class="row-span-3" src="./images/undraw_workspace_s6wf.svg" alt="">
-        <h1 class="col-span-2">Administrative Associate</h1>
-        <p class="col-span-2 row-span-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam doloremque
-          libero quidem eligendi reprehenderit deserunt temporibus? </p>
+      <div class="grid grid-cols-2 gap-10 mx-40 mt-40">
+        <a href=""
+          ><img
+            class="shadow-xl"
+            src="./images/Screenshot 2025-02-27 193930.png"
+            alt=""
+        /></a>
+        <a href=""
+          ><img
+            class="shadow-xl"
+            src="./images/Screenshot 2025-02-27 193930.png"
+            alt=""
+        /></a>
+        <a href=""
+          ><img
+            class="shadow-xl"
+            src="./images/Screenshot 2025-02-27 193930.png"
+            alt=""
+        /></a>
+        <a href=""
+          ><img
+            class="shadow-xl"
+            src="./images/Screenshot 2025-02-27 193930.png"
+            alt=""
+        /></a>
       </div>
-      <div class="grid grid-flow-col grid-rows-3 gap-4 mx-80 h-100 gap- m-auto bg-green-500 items-center my-5">
-        <img class="row-span-3" src="./images/undraw_workspace_s6wf.svg" alt="">
-        <h1 class="col-span-2">Administrative Associate</h1>
-        <p class="col-span-2 row-span-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam doloremque
-          libero quidem eligendi reprehenderit deserunt temporibus? </p>
+    </section>
+
+    <section>
+      <div>
+        <h1>
+          Contact me
+        </h1>
+        <form>
+
+        </form>
       </div>
+    </section>
+    <section>
+      <!-- contact form here -->
+    </section>
 
-    </div>
-  </section>
-
-  <section>
-    <div>
-      <h1 class="text-7xl text-center mt-40">My Work</h1>
-    </div>
-    <div class="grid grid-cols-2 gap-10 mx-40 mt-40">
-      <a href=""><img class="shadow-xl" src="./images/Screenshot 2025-02-27 193930.png" alt=""></a>
-      <a href=""><img class="shadow-xl" src="./images/Screenshot 2025-02-27 193930.png" alt=""></a>
-      <a href=""><img class="shadow-xl" src="./images/Screenshot 2025-02-27 193930.png" alt=""></a>
-      <a href=""><img class="shadow-xl" src="./images/Screenshot 2025-02-27 193930.png" alt=""></a>
-
-    </div>
-  </section>
-
-  <section>
-    <!-- my resume download goes here -->
-  </section>
-  <section>
-    <!-- contact form here -->
-  </section>
-
-
-  <footer class="bg-green-500 h-98 w-full mt-40">
-    
-
-  </footer>
-</body>
-
+    <footer class="bg-green-500 h-98 w-full mt-40"></footer>
+  </body>
 </html>
