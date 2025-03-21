@@ -1,0 +1,1 @@
+document.getElementById ("click").innertext = "I am capable!"
