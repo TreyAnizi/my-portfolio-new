@@ -1,166 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>portfolio</title>
-    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
-    <script src="./index.js" defer></script>
-  </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Navbar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <nav class="bg-[#006529] text-black p-4 shadow-lg">
+        <div class="container mx-auto flex justify-between items-center">
+            <!-- Initials -->
+            <a href="#" class="text-2xl font-bold">TA</a>
+            
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex space-x-6">
+                <a href="#about" class="hover:text-gray-400">About</a>
+                <a href="#projects" class="hover:text-gray-400">Skills</a>
+                <a href="#contact" class="hover:text-gray-400">Portfolio</a>
+                <a href="#contact" class="hover:text-gray-400">Contact</a>
+            </div>
 
-  <body class="bg-grey-100">
-    <header class="bg-black h-screen">
-      <div class="flex gap-120 bg-green-500 opacity-50 shadow-xl">
-        <div class="p-5">
-          <h1 class="text-4xl">TA</h1>
+            <!-- Mobile Menu Button -->
+            <button id="menu-btn" class="md:hidden focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
         </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden flex flex-col items-center space-y-4 p-4">
+            <a href="#about" class="hover:text-gray-400">About</a>
+            <a href="#projects" class="hover:text-gray-400">Skills</a>
+            <a href="#projects" class="hover:text-gray-400">Projects</a>
+            <a href="#contact" class="hover:text-gray-400">Contact</a>
+        </div>
+    </nav>
 
-        <nav class="flex p-5">
-          <ul class="flex gap-3">
-            <li>
-              <a class="hover:bg-green-500 p-3 rounded-full" href="#home"
-                >Home</a
-              >
-            </li>
-            <li>
-              <a class="hover:bg-green-500 p-3 rounded-full" href="#about"
-                >About me</a
-              >
-            </li>
-            <li>
-              <a class="hover:bg-green-500 p-3 rounded-full" href="#skill"
-                >Skills and Experience</a
-              >
-            </li>
-            <li>
-              <a class="hover:bg-green-500 p-3 rounded-full" href="#port"
-                >Portfolio</a
-              >
-            </li>
-            <li>
-              <a class="hover:bg-green-500 p-3 rounded-full" href="#cv"
-                >Resume</a
-              >
-            </li>
-            <li>
-              <a class="hover:bg-green-500 p-3 rounded-full" href="#contact"
-                >Contact</a
-              >
-            </li>
-          </ul>
-        </nav>
-      </div>
-      <div id="home" class="flex flex-row place-content-center">
-        <div class="w-1/2">
-          <!-- image goes here -->
+    <!-- Hero Section -->
+    <section class="h-screen flex items-center justify-center bg-black text-white text-center">
+        <div>
+            <h1 class="text-4xl md:text-6xl font-bold">Hi, I'm <span class="text-[#006529]">Trey Anizi Amoro</span></h1>
+            <p class="text-xl md:text-2xl mt-4">I am a <span id="typing-text" class="text-[#006529]"></span></p>
         </div>
-
-        <div class="w-1/2 mt-64">
-          <h1 class="text-5xl">Hello Welcome</h1>
-          <p class="text-5xl text-white">
-            I am Tracy
-            <span class="text-green-700 shadow-xl p-5 text-7xl"
-              >Anizi Amoro</span
-            >
-          </p>
-        </div>
-      </div>
-    </header>
-    <section id="about" class="mx-60 my-50">
-      <div
-        class="h-150 rounded-xl flex flex-col gap-5 pt-20 shadow-xl text-center"
-      >
-        <h1 class="text-green-700 text-3xl font-bold">ABOUT ME</h1>
-        <p id="typewriter" class="text-gray-600 mt-4">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus
-          possimus cumque doloribus voluptatum exercitationem minus, similique
-          ipsa soluta dignissimos et. Voluptatum reprehenderit voluptates
-          necessitatibus repellat alias corrupti dolore, facilis illo?
-        </p>
-      </div>
     </section>
 
-    <section id="skill" class="mx-50">
-      <div class="flex flex-row gap-20">
-        <div class="flex flex-col gap-4 items-center p-4 shadow-xl">
-          <h1 class="text-2xl text-green-700">Junior Backend Developer</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex eligendi
-            aliquam dolorem quibusdam, voluptate harum consequuntur quae
-            recusandae excepturi suscipit nesciunt cupiditate officiis possimus
-            et ut beatae tenetur fugiat quaerat.
-          </p>
+    <!-- About Me Section -->
+    <section id="about" class="text-[#006529] py-16 px-6 md:px-20">
+        <div class="container mx-auto flex flex-col md:flex-row items-center gap-8">
+            <!-- Image -->
+            <div class="w-full md:w-1/2 flex justify-center">
+                <img src="https://via.placeholder.com/300" alt="Profile Picture" class="rounded-lg shadow-lg">
+            </div>
+            
+            <!-- Text Content -->
+            <div class="w-full md:w-1/2 text-center md:text-left">
+                <p>Who am I?</p>
+                <h2 class="text-4xl font-bold mb-4">About Me</h2>
+                <p class="text-lg text-[black]">
+                    I am a passionate web developer specializing in creating stunning and user-friendly web experiences. With a strong background in backend development, I bring creative solutions to digital challenges. I am always eager to learn new technologies and improve my craft.
+                </p>
+                <!-- Download CV Button -->
+                <a href="./CV/T.A AMORO RESUME.pdf" download class="mt-6 inline-block px-6 py-3 bg-[#006529] text-white font-bold rounded-lg shadow-md hover:bg-black transition">Download CV</a>
+            </div>
+            </div>
         </div>
-        <div class="flex flex-col gap-4 items-center p-4 shadow-xl">
-          <h1 class="text-2xl text-green-700">Administrative Associate</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex eligendi
-            aliquam dolorem quibusdam, voluptate harum consequuntur quae
-            recusandae excepturi suscipit nesciunt cupiditate officiis possimus
-            et ut beatae tenetur fugiat quaerat.
-          </p>
-        </div>
-        <div class="flex flex-col gap-4 items-center p-4 shadow-xl">
-          <h1 class="text-2xl text-green-700">Project facilitation</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex eligendi
-            aliquam dolorem quibusdam, voluptate harum consequuntur quae
-            recusandae excepturi suscipit nesciunt cupiditate officiis possimus
-            et ut beatae tenetur fugiat quaerat.
-          </p>
-        </div>
-      </div>
     </section>
 
-    <section class="mx-20" id="port">
-      <div>
-        <h1 class="text-green-700 text-2xl text-center mt-40 font-bold">My Work</h1>
-      </div>
-      <div class=" flex flex-row gap-10 mt-30">
-       
-       <article class="mx-auto  shadow-xl bg-cover bg-center min-h-150 relative border-8 border-black  transform duration-500 hover:-translate-y-12   group" style="background-image: url ()">
-       <div class="bg-green-700 relative h-full group-hover:bg-opacity-0 min-h-150  flex flex-wrap flex-col pt-[30rem] hover:bg-opacity-75 transform duration-300">
-        <div class=" bg-black p-8 h-full justify-end flex flex-col">
-          <a href="#"
-            ><img  src="./images/Screenshot 2025-02-27 193930.png" alt=""
-          /></a>
-          <h1  class="text-white mt-2 text-xl mb-5 transform  translate-y-20 uppercase group-hover:translate-y-0 duration-300 group-hover:text-green-700">dhftfdbn gg gvdvg bbhb dgvg h gvgd bgvg</h1>
-          <p class="opacity-0 text-white text-xl group-hover:opacity-80 transform duration-500 ">dvhvgdbb hdgvghdbhghbdnbhyghbdggvghvbndbhgh</p>
+    <!-- Services Section -->
+    <section id="services" class="bg-black text-white py-16 px-6 md:px-20">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-8">Services</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-[#006529] p-6 rounded-lg shadow-lg transform transition duration-500 hover:scale-105">
+                    <h3 class="text-2xl font-bold mb-3">Backend Development</h3>
+                    <p class="text-gray-300">Creating responsive, user-friendly, and visually appealing interfaces using modern frameworks.</p>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="bg-[#006529] p-6 rounded-lg shadow-lg transform transition duration-500 hover:scale-105">
+                    <h3 class="text-2xl font-bold mb-3">Administrative Services</h3>
+                    <p class="text-gray-300">Building secure, efficient, and scalable backend solutions with databases and APIs.</p>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="bg-[#006529] p-6 rounded-lg shadow-lg transform transition duration-500 hover:scale-105">
+                    <h3 class="text-2xl font-bold mb-3">Data Management</h3>
+                    <p class="text-gray-300">Developing complete web applications from frontend to backend with seamless integration.</p>
+                </div>
+            </div>
         </div>
-      </div>
-    </article>
+    </section>
 
-    <article class="mx-auto  shadow-xl bg-cover bg-center min-h-150 relative border-8 border-black  transform duration-500 hover:-translate-y-12   group" style="background-image: url ()">
-      <div class="bg-green-700 relative h-full group-hover:bg-opacity-0 min-h-150  flex flex-wrap flex-col pt-[30rem] hover:bg-opacity-75 transform duration-300">
-       <div class=" bg-black p-8 h-full justify-end flex flex-col">
-         <a href="#"
-           ><img  src="./images/Screenshot 2025-02-27 193930.png" alt=""
-         /></a>
-         <h1  class="text-white mt-2 text-xl mb-5 transform  translate-y-20 uppercase group-hover:translate-y-0 duration-300 group-hover:text-green-700">dhftfdbn gg gvdvg bbhb dgvg h gvgd bgvg</h1>
-         <p class="opacity-0 text-white text-xl group-hover:opacity-80 transform duration-500 ">dvhvgdbb hdgvghdbhghbdnbhyghbdggvghvbndbhgh</p>
-       </div>
-     </div>
-   </article>
-
-   <article class="mx-auto  shadow-xl bg-cover bg-center min-h-150 relative border-8 border-black  transform duration-500 hover:-translate-y-12   group" style="background-image: url ()">
-    <div class="bg-green-700 relative h-full group-hover:bg-opacity-0 min-h-150  flex flex-wrap flex-col pt-[30rem] hover:bg-opacity-75 transform duration-300">
-     <div class=" bg-black p-8 h-full justify-end flex flex-col">
-       <a href="#"
-         ><img  src="./images/Screenshot 2025-02-27 193930.png" alt=""
-       /></a>
-       <h1  class="text-white mt-2 text-xl mb-5 transform  translate-y-20 uppercase group-hover:translate-y-0 duration-300 group-hover:text-green-700">dhftfdbn gg gvdvg bbhb dgvg h gvgd bgvg</h1>
-       <p class="opacity-0 text-white text-xl group-hover:opacity-80 transform duration-500 ">dvhvgdbb hdgvghdbhghbdnbhyghbdggvghvbndbhgh</p>
-     </div>
-   </div>
- </article>
-       
-       
-       
-       
-
-
-
-      </div>
+    <!-- Projects Section -->
+    <section id="projects" class=" text-green py-16 px-6 md:px-20">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-8">My Projects</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="relative group overflow-hidden rounded-lg shadow-lg">
+                    <img src="./images/Screenshot 2025-02-27 193930.png" class="w-full h-64 object-cover group-hover:opacity-50 transition duration-300" alt="Project Image">
+                    <div class="absolute bottom-0 left-0 w-full bg-[#006529] p-4 transform translate-y-full group-hover:translate-y-0 transition duration-300">
+                        <h3 class="text-xl font-bold">Project Title</h3>
+                        <p class="text-gray-300">Short description of the project.</p>
+                        <a href="#" class="text-blue-400 hover:underline">View Project</a>
+                    </div>
+                </div>
+                <div class="relative group overflow-hidden rounded-lg shadow-lg">
+                    <img src="https://via.placeholder.com/400" class="w-full h-64 object-cover group-hover:opacity-50 transition duration-300" alt="Project Image">
+                    <div class="absolute bottom-0 left-0 w-full bg-[#006529] p-4 transform translate-y-full group-hover:translate-y-0 transition duration-300">
+                        <h3 class="text-xl font-bold">Project Title</h3>
+                        <p class="text-gray-300">Short description of the project.</p>
+                        <a href="#" class="text-blue-400 hover:underline">View Project</a>
+                    </div>
+                </div>
+                <div class="relative group overflow-hidden rounded-lg shadow-lg">
+                    <img src="https://via.placeholder.com/400" class="w-full h-64 object-cover group-hover:opacity-50 transition duration-300" alt="Project Image">
+                    <div class="absolute bottom-0 left-0 w-full bg-[#006529] p-4 transform translate-y-full group-hover:translate-y-0 transition duration-300">
+                        <h3 class="text-xl font-bold">Project Title</h3>
+                        <p class="text-gray-300">Short description of the project.</p>
+                        <a href="#" class="text-blue-400 hover:underline">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <section
@@ -358,5 +321,10 @@
         </div>
       </footer>
     </section>
-  </body>
+
+
+    <script src="index.js">
+        
+    </script>
+</body>
 </html>
