@@ -6,7 +6,7 @@ menuBtn.addEventListener("click", () => {
 });
 
 // Typing Effect
-const textArray = ["Web Developer", "Frontend Engineer", "UI/UX Designer"];
+const textArray = ["Web Developer", "Administrative Associate", "Data/Project Manager"];
 let textIndex = 0;
 let charIndex = 0;
 const typingText = document.getElementById("typing-text");
